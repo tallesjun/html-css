@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgb(153, 152, 152);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Visulize o site com a página em diferentes tamanhos &#x1F4F1;.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img500.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img700.png" type="image/png">
+        <img src="imagens/img1000.png" alt="imagem grande">
+    </picture>
+
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: rgb(18, 18, 18);
+    text-align: center;
+    color: rgb(241, 241, 241);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.img{
+    width: 250px;
+}
+
+.img:hover{
+    box-shadow: 0px 0px 16px rgba(255, 255, 255, 0.592);
+}
+
+.img:active{
+    width: 235px;
+    box-shadow: none;
+}
+
+#voltar{
+    height: 60px;
+    width: 60px;
+    text-align: center;
+}
+
+#voltar:hover{
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.459);
+    
+}
+
+#voltar:active{
+    height: 50px;
+    width: 50px;
+    box-shadow: none;
+}
+
+.link{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;    
+    color: rgb(0, 0, 0);
+    background-color: rgb(49, 49, 49);
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+.link:hover{
+    box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.459);    
+    border: 1.7px solid white;
+    text-decoration: underline;
+}
+
+.link:active{
+    box-shadow: none;
+    font-size: 19px;
+}

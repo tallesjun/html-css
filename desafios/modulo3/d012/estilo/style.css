@@ -8,9 +8,7 @@
     margin: 0px;
 }
 
-body{
-    
-}
+
 
 header{
     text-align: center;
@@ -45,9 +43,11 @@ header > p > a{
 
 aside{
     position: relative;
+    min-height: 600px;
     height: 70vh;
     background-color: white;
     background-size: 100% 100%;
+
 
 }
 
@@ -60,12 +60,6 @@ aside{
     background: url("..//imagens/background002.jpg") center center/ cover fixed;
 }
 
-aside > p{
-    padding: 40px;
-    background-size: 30vh;
-
-}
-
 pre{
     position: absolute;
     font-family: "Sriracha", cursive;
@@ -76,7 +70,7 @@ pre{
     
     
     left: 2%;
-
+    top: 10%;
 }
 
 #predif{

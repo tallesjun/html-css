@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            display: block;
+            margin: auto;
+            border-collapse: collapse;
+            max-width: 500px;
+
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgb(65, 65, 65);
+            color: white;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(even){ /* Usar 2n ou 2n-1 ou odd(impar) even(par) para ficar intercalado */
+            background-color: lightgray;
+        }
+
+        td:nth-child(3){ /* :nth-child() para selecionar sem precisar usar class */
+            text-align: center;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead{
+            position: sticky;
+            top: -1px;
+            margin: 0px;
+            border: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    
+    <!-- SCOPE para dixer se o dado esta na coluna ou na linha -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 95px;">População</th>
+                <th scope="col">País compatível</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 081 801</td>
+                <td> Argentina (45 851 378)</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 393 441</td>
+                <td>Chade (21 003 705)</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+                <td> Zimbabwe (16 950 795)</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 870 907</td>
+                <td>Benim (14 814 460)</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 890 517</td>
+                <td>Haiti (11 906 095)</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 233 263	</td>
+                <td>Emirados Árabes Unidos (11 346 000)</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 562 007</td>
+                <td>Israel (9 517 181)</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num"> 9 268 836</td>
+                <td>Áustria (9 113 574)</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 711 196</td>
+                <td>Serra Leoa (8 819 794)</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 187 029</td>
+                <td>Laos (7 873 046)</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 423 629</td>
+                <td>Líbia (7 458 555)</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 018 211</td>
+                <td>Paraguai (7 013 078)</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 321 616</td>
+                <td>Panamá (4 571 189)</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4 164 468</td>
+                <td>Croácia (3 848 160)</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 126 854</td>
+                <td>Croácia (3 848 160)</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 893 659</td>
+                <td>Croácia (3 848 160)</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 455 236</td>
+                <td>Mongólia (3 517 100)</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 384 547</td>
+                <td>Uruguai (3 384 688)</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 220 848</td>
+                <td>Bósnia e Herzegovina (3 140 095)</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 996 899</td>
+                <td>Moldávia (2 996 106)</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 924 631</td>
+                <td>Armênia (2 952 365)</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 299 425</td>
+                <td>Guiné-Bissau (2 249 515)</td>
+            </tr>
+            <tr>
+                <td>Ronônia</td>
+                <td class="num">1 751 950</td>
+                <td>Macedônia do Norte (1 813 791)</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 586 859</td>
+                <td>Barém (1 643 332)</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">884 372</td>
+                <td>Comores (882 847)</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">806 517</td>
+                <td>Butão (796 682)</td>
+            </tr>
+            <tr>
+                <td>Roaraima</td>
+                <td class="num">738 772</td>
+                <td>Butão (796 682)</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+                <td class="num">213 421 037</td>
+                <td>---</td>
+        </tfoot>
+    </table>
+
+    <!-- Para faxer o teste na barra -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus libero omnis possimus iure dolore in odit qui doloribus, autem enim consectetur a nisi quaerat alias aspernatur id quam inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem illo hic excepturi atque doloremque molestias corporis quisquam sit laborum, recusandae sed perferendis quis nam odio assumenda repellendus iusto. A? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illum sequi assumenda voluptatum deserunt obcaecati eius quo, tenetur adipisci iusto numquam asperiores rem, corporis et exercitationem cumque ipsam molestiae animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis repellat similique quia blanditiis unde ex ratione ipsam, voluptate, ut laudantium rem sed beatae! Enim accusantium nisi aliquam impedit, saepe consequuntur!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus libero omnis possimus iure dolore in odit qui doloribus, autem enim consectetur a nisi quaerat alias aspernatur id quam inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem illo hic excepturi atque doloremque molestias corporis quisquam sit laborum, recusandae sed perferendis quis nam odio assumenda repellendus iusto. A? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illum sequi assumenda voluptatum deserunt obcaecati eius quo, tenetur adipisci iusto numquam asperiores rem, corporis et exercitationem cumque ipsam molestiae animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis repellat similique quia blanditiis unde ex ratione ipsam, voluptate, ut laudantium rem sed beatae! Enim accusantium nisi aliquam impedit, saepe consequuntur!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus libero omnis possimus iure dolore in odit qui doloribus, autem enim consectetur a nisi quaerat alias aspernatur id quam inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem illo hic excepturi atque doloremque molestias corporis quisquam sit laborum, recusandae sed perferendis quis nam odio assumenda repellendus iusto. A? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illum sequi assumenda voluptatum deserunt obcaecati eius quo, tenetur adipisci iusto numquam asperiores rem, corporis et exercitationem cumque ipsam molestiae animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis repellat similique quia blanditiis unde ex ratione ipsam, voluptate, ut laudantium rem sed beatae! Enim accusantium nisi aliquam impedit, saepe consequuntur!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus libero omnis possimus iure dolore in odit qui doloribus, autem enim consectetur a nisi quaerat alias aspernatur id quam inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem illo hic excepturi atque doloremque molestias corporis quisquam sit laborum, recusandae sed perferendis quis nam odio assumenda repellendus iusto. A? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illum sequi assumenda voluptatum deserunt obcaecati eius quo, tenetur adipisci iusto numquam asperiores rem, corporis et exercitationem cumque ipsam molestiae animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis repellat similique quia blanditiis unde ex ratione ipsam, voluptate, ut laudantium rem sed beatae! Enim accusantium nisi aliquam impedit, saepe consequuntur!</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam temporibus libero omnis possimus iure dolore in odit qui doloribus, autem enim consectetur a nisi quaerat alias aspernatur id quam inventore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptatem illo hic excepturi atque doloremque molestias corporis quisquam sit laborum, recusandae sed perferendis quis nam odio assumenda repellendus iusto. A? Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, illum sequi assumenda voluptatum deserunt obcaecati eius quo, tenetur adipisci iusto numquam asperiores rem, corporis et exercitationem cumque ipsam molestiae animi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis repellat similique quia blanditiis unde ex ratione ipsam, voluptate, ut laudantium rem sed beatae! Enim accusantium nisi aliquam impedit, saepe consequuntur!</p>
+</body>
+</html>

@@ -6,6 +6,7 @@
     <title>Desafio Astronauta</title>
     <style>
         body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: black;
             height: 97vh;
             background-image: url("imagens/espaco.jpg");
@@ -15,17 +16,62 @@
         }
 
         div.ast{
+            
             height: 97vh;
             background-image: url("imagens/astronauta.png");
             border: 0px solid transparent;
             background-repeat: no-repeat;
             background-position: center center;
         }
+
+        .login{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.319);
+            text-align: center;
+            padding: 10px;
+        }
+
+        a{
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: darkblue;
+        }
+
+        .logar{
+            display: none;
+        }
         
+        .login > .logar:hover{
+            display: block;
+            
+        }
     </style>
 </head>
 <body>
+   
     <div class="ast">
+        
+    </div> 
+    <div class="login">
+        
+        <a href="" class="log">
+            Login
+            <h2>E-mail:</h2>
+            <p>Ex: fulano@gmail.com</p>
+            <h2>Senha:</h2>
+            <p>********</p>
+        </a>
         
     </div>
 </body>

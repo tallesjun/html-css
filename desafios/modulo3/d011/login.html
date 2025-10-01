@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Astronauta</title>
+    <title>Login</title>
     <style>
-        body{
-            
+         body{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: black;
             height: 97vh;
@@ -25,64 +24,50 @@
             background-position: center center;
         }
 
-        .login{
+        .log{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            
-            width: auto;
+            position: absolute;
+            margin: auto;
+            background-color: white;
+            width: 300px;
             height: auto;
             border-radius: 15px;
-            margin: 0px;
+            box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.319);
             text-align: center;
-            
-            
-            
+            padding: 10px;
         }
 
-        a{
+            .log > p{
+            background-color: lightgray;
+            padding: 7px;
+            border-radius: 7px;
+        }
+
+            a{
             text-decoration: none;
             color: black;
             font-weight: bold;
         }
 
-        .log{
-            
-            background-color: white;
-            padding: 10px;
-            border-radius: 15px 0px 0px 15px;
-            margin: 0px;
-        
-        }
-
-        .reg{
-            margin: 0px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 0px 15px 15px 0px;
-            
-        }
-        
         a:hover{
-            background-color: blueviolet;
-            color: white;
+            
+            color: blueviolet;
             
         }
-
-
 
     </style>
 </head>
 <body>
-   <!--
-    <div class="ast">
-        
-    </div>  --> 
-    <div class="login">
-        <a href="login.html" class="log">Login</a>
-        <a href="" class="reg">Registrar-se</a>
-    </div>    
-    
+    <div class="log">
+            
+            <h2>E-mail:</h2>
+            <p>Ex: fulano@gmail.com</p>
+            <h2>Senha:</h2>
+            <p>********</p>
+            <a href="index.html"> voltar</a>
+        </div>
 </body>
 </html>

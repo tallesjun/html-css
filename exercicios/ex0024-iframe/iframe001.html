@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de iframe</title>
+    <style>
+        iframe{
+            height: 500px;
+            width: 400px;
+           
+        }
+    </style>
+    <!-- Configuração em CSS tem prioridade -->
+</head>
+<body>
+    <h1>Testando o uso de iframes</h1>
+    <p>
+        Acessando o site do 
+        <!-- Tamanho padrão do iframe 300x150 pixels -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+            <a href="https://www.cursoemvideo.com">CursoemVideo</a> <!-- colocar um link dentro do iframe por se o navegador nao e compativel -->
+        </iframe>
+
+        para aprender a programar.
+    </p>
+
+    <p>
+        O repositório do Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="1" scolling="no">
+        <!-- 
+        
+        Padrões da barra de rolagem(scoling)
+
+        auto(padrão): se o conteúdo excede o frame aparece a barra
+
+        yes: mesmo que o conteúdo não excede o frame a barra aparece
+        
+        no: não aparece a barra em nenhuma situação (dependendo do navegador)
+
+        -->
+
+            <a href="https://gustavoguanabara.github.io">Repositório</a>
+        </iframe>
+
+        também é bem legal.
+    </p> 
+    
+    <!-- Alguns sites não permitem abrir no iframe -->
+</body>
+</html>

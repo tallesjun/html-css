@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit aspernatur numquam impedit modi suscipit pariatur doloremque, minus vitae nesciunt commodi corrupti, officiis tempore dicta nam ducimus cupiditate harum placeat. Hic.</p>
+
+    <iframe src="paginas-extras/pagina004.html" sandbox="sandbox" referrerpolicy="allow-same-origin" ></iframe>
+    <!-- sandbox="sandbox"= para nao capturar informaçao -->
+
+    <!-- sandbox="allow-same-origin"= permitir coisas da mesma origem -->
+
+    <!-- allow-forms= permitir formularios -->
+
+    <!-- allow-script= permitir scripts -->
+
+    <!-- referrerpolicy="no-referer= o conteudo no iframe nao vai coletar informaçoes do usuario -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloribus vitae harum aliquid voluptas sequi atque, incidunt alias dolor dicta cum tempora quidem, odio ipsum porro mollitia, ea eos aut.</p>
+</body>
+</html>

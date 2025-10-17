@@ -17,15 +17,16 @@ body{
 }
 
 .icones{
-    border-radius: 300px;
+    border-radius: 50%;
     width: 50px;
     margin-block: 5px;
-    
+    box-sizing: border-box;
     
 }
 .icones:hover{
     border: 3px solid rgba(255, 255, 255, 0.623);
-    width: 44px;
+    transition: 0.2s;
+    transform: translate(-4px);
     
 }
 
@@ -33,7 +34,7 @@ div.nave{
     position: relative;
     width: 50px;
     height: 350px;
-    left: 94%;
+    left: 90%;
 }
 
 div.cel{
